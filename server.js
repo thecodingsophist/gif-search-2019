@@ -9,15 +9,22 @@ app.set('view engine', 'handlebars');
 
 // Routes
 
-// simple / endpoint
+// ROUTES
+
+//home route
 app.get('/', (req, res) => {
+  res.render('home')
+})
+
+// simple / endpoint
+app.get('/puppies', (req, res) => {
   // set the url of the gif
   const gifUrl = 'https://media1.tenor.com/images/561c988433b8d71d378c9ccb4b719b6c/tenor.gif?itemid=10058245'
   // render the hello-gif view, passing the gifUrl into the view to be displayed
   res.render('hello-gif', { gifUrl })
 })
 
-// greetings endpoint 
+// greetings endpoint
 app.get('/greetings/:name', (req, res) => {
   // grab the name from the path provided
   const name = req.params.name;
