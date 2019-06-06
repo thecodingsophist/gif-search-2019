@@ -8,6 +8,7 @@ app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 // Routes
+
 app.get('/', (req, res) => {
   res.send('Hello Squirrel');
 });
