@@ -1,5 +1,8 @@
 //require is the javescript way of saying 'import'
 const express = require('express');
+
+//once you import express, you can set it to a variable that you can use later
+//for example, it is used to set up middleware such as handlebars
 const app = express();
 
 // Middleware
