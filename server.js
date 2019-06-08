@@ -1,3 +1,4 @@
+//require is the javescript way of saying 'import'
 const express = require('express');
 const app = express();
 
