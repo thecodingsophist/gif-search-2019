@@ -5,7 +5,7 @@ const express = require('express');
 //for example, it is used to set up middleware such as handlebars
 const app = express();
 
-// Middleware
+// middleware
 const exphbs  = require('express-handlebars');
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
